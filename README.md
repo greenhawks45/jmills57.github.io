@@ -1,2 +1,2 @@
 # jmills57.github.io
-Testing how to publish a website
+Jacob Mills' ASU CIS300 class repository
