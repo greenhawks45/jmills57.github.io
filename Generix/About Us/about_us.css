@@ -1,0 +1,33 @@
+body {
+    color: grey;
+    font-size: 16px;
+    font-weight: bold;
+    
+    background-image: url("metallicbackground.jpg");
+    /* image will stay in place with page (fixed) */
+    background-attachment: fixed;
+    /* backgorund image will not repeat (no-repeat) */
+    background-repeat: no-repeat;
+    /* stretch/shrink image to cover the page (cover)  */
+    background-size: cover;
+    background-color: black;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+h2 {
+    font-size: 36pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+
+
+footer {
+    font-size: 8pt;
+    text-align: center;
+}

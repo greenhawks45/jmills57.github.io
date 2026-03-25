@@ -1,0 +1,147 @@
+main {
+    place-items: center; /* Centers both horizontally and vertically with one property */
+}
+
+body {
+    color: grey;
+    font-size: 16px;
+    font-family: Candara, Trebuchet MS;
+    font-weight: bold;
+    
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+header {
+    color: white;
+    width: 100%;
+}
+
+.gnrx-header {
+    min-height: 50px;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.desktop-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.mobile-socials {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .mobile-socials {
+        display: flex;
+        gap: 6px;
+        margin-top: 5px;
+        margin-left: auto;
+    }
+
+    .desktop-socials {
+        display: none;
+    }
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: grey
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-align: center;
+    font-size: 2vw;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+h3 {
+    font-size: 27pt;
+}
+
+footer {
+    font-size: 12pt;
+    text-align: center;
+}
+
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: white;
+}
+
+.sheet-music {
+    display: grid;
+    place-items: center;
+    font-size: 16pt;
+}
+
+
+
+
+.mobile-calendar, .desktop-calendar {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-calendar {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .desktop-calendar {
+        display: none;
+    }
+    .mobile-calendar {
+        display: flex;
+    }
+}
