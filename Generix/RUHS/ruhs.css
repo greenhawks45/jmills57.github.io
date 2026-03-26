@@ -1,24 +1,10 @@
-main {
-    place-items: center; /* Centers both horizontally and vertically with one property */
+/* Site Standard Formatting */
+
+::-webkit-scrollbar {
+    display: none;
 }
 
-body {
-    color: grey;
-    font-size: 16px;
-    font-family: Candara, Trebuchet MS;
-    font-weight: bold;
-    
-    background-color: black;
-}
-
-
-
-
-
-
-
-
-
+/* Header */
 header {
     color: white;
     width: 100%;
@@ -26,12 +12,13 @@ header {
 
 .gnrx-header {
     min-height: 50px;
-    font-size: 4vw;
+    font-size: 32px;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
+/* Socials */
 .desktop-socials {
     display: flex;
     justify-content: center;
@@ -39,7 +26,7 @@ header {
     gap: 6px;
     margin-top: 7px;
     margin-left: auto;
-    margin-right: 16px;
+    margin-right: 5px;
 }
 
 .mobile-socials {
@@ -63,28 +50,38 @@ header {
     filter: invert(100%);
 }
 
-nav a:link {
-    color: white;
-}
-
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    color: grey
-}
-
+/* Nav */
 nav {
     display: flex;
-    place-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+
     gap: 4px;
     text-align: center;
-    font-size: 2vw;
+    font-size: 18px;
     width: 100%;
 }
 
+.link-style-nav  {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100%;
+
+    color: white;
+    width: fit-content;
+    padding: 10px;
+
+    border-radius: 12px;
+    border: 2.5px solid white;
+    background-color: black;
+}
+
+/* Titles */
 h1, h2, h3, h4, h5, h6 {
     color: white;
 }
@@ -97,37 +94,86 @@ h2 {
     font-size: 30pt;
 }
 
-h3 {
-    font-size: 27pt;
+
+/* main / body / p */
+main {
+/* Centers both horizontally and vertically with one property */
+    place-items: center;
+
+    text-align: center;
 }
 
+body {
+    color: #a2a2a2;
+    font-size: 16px;
+    font-family: Candara, Trebuchet MS;
+    font-weight: bold;
+
+    background-color: black;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Footer */
 footer {
     font-size: 12pt;
     text-align: center;
 }
 
+/* Page Unique Style*/
 
-a:link {
-    color: grey;
-}
-
-a:visited {
-    color: grey;
-}
-
-a:hover {
+/* Links */
+a:link, a:visited {
     color: white;
 }
 
+a:hover {
+    color: #a2a2a2
+}
+.link-style-1  {
+    display: flex;
+    justify-self: center;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+
+    border-radius: 12px;
+    border: 2.5px solid white;
+    background-color: black;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+/* Transportation Forms */
+.transportation-form {
+    justify-items: center;
+}
+
+ol {
+    text-align: left;
+    line-height: 150%;
+}
+
+/* Sheet Music */
 .sheet-music {
     display: grid;
     place-items: center;
     font-size: 16pt;
 }
 
-
-
-
+/* Calendar */
 .mobile-calendar, .desktop-calendar {
     display: flex;
     justify-content: center;
